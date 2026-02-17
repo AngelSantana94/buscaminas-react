@@ -25,4 +25,4 @@ Accessibility (A11y): Usage of dynamic alt attributes to make the game understan
 
 🚀 Deployment Configured for seamless deployment on GitHub Pages using relative pathing, ensuring all assets (cells, bombs, and flags) load correctly in subfolder environments.
 
-![Vitest Results](./public/img/tu-foto-del-test.png)
+![Vitest Results](./public/img/test.png)
