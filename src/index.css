@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Si instalaste daisyUI como plugin de CSS (v4 style) */
+@plugin "daisyui";

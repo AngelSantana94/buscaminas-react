@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bomba02.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+    <title>buscaminas</title>
+    
+  </head>
+  <body>
+    <div id="app-buscaminas">
+      <div id="banner-text"></div>
+      <div id="title" ></div>
+  
+      <div id="board-img">
+          <div id="head">
+              <div class="stat-box" id="minas">
+                  Minas: <span id="minas-number"></span>
+              </div>
+              <div class="stat-box" id="time">
+                  Tiempo: <span id="minutos">00</span>:<span id="segundos">00</span>
+              </div>
+          </div>
+          
+          <div id="board"></div>
+      </div>
+  
+      <div id="game-ui">
+          <div id="status-display">INICIAR</div>
+          <div id="exit"></div>
+      </div>
+  </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
