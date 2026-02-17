@@ -24,3 +24,5 @@ Component Rendering: Ensures the board generates the exact number of cells based
 Accessibility (A11y): Usage of dynamic alt attributes to make the game understandable for screen reader users.
 
 🚀 Deployment Configured for seamless deployment on GitHub Pages using relative pathing, ensuring all assets (cells, bombs, and flags) load correctly in subfolder environments.
+
+![Vitest Results](img/test.png)
