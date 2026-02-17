@@ -1,73 +1,26 @@
-# React + TypeScript + Vite
+💣 Minesweeper React - Ultra Edition
+A modern Minesweeper simulator built with React 19 and TypeScript, focusing on performance, accessibility, and testability. The project features a stylized "Retro-Arcade" aesthetic powered by Tailwind CSS 4 and DaisyUI 5 components.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ Core Technology Stack React 19: Utilizes advanced hooks and efficient rendering patterns.
 
-Currently, two official plugins are available:
+TypeScript: Implements strict typing for cell logic and board state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tailwind CSS 4 + DaisyUI 5: Modern utility-first styling with high-performance plugins for a responsive and polished UI.
 
-## React Compiler
+Vitest + React Testing Library: A comprehensive suite of unit and integration tests to ensure reliable game logic.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🧠 Key Logic Features Fisher-Yates Shuffle Algorithm: Implements a true random shuffle for mine placement, ensuring every game session is unique and fair.
 
-## Expanding the ESLint configuration
+Radar System (Mines Nearby): An optimized 3x3 neighborhood scan logic that instantly calculates proximity indicators for every cell.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+State Management: Centralized control of the game lifecycle (Start, Win, Game Over) via reactive states.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🧪 Quality Assurance (Testing) The project includes an automated test suite that validates:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Pure Logic: Verification of array shuffling and mathematical radar calculations.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Component Rendering: Ensures the board generates the exact number of cells based on row/column parameters.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Accessibility (A11y): Usage of dynamic alt attributes to make the game understandable for screen reader users.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🚀 Deployment Configured for seamless deployment on GitHub Pages using relative pathing, ensuring all assets (cells, bombs, and flags) load correctly in subfolder environments.

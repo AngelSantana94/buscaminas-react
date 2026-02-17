@@ -227,7 +227,7 @@ export const Board = ({
                 >
                   <img
                     src={cellImg}
-                    alt="cellAlt"
+                    alt= {cellAlt}
                     className="absolute inset-0 w-full h-full object-cover group-active:scale-95 transition-transform"
                   />
                   {cell.isOpen && !cell.hasMine && cell.minesNearby > 0 && (
