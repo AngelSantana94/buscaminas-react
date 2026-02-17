@@ -35,7 +35,7 @@ export const Board = ({
   );
 
   const playSFX = (file: string, volume: number = 0.2) => {
-    const sfx = new Audio(`/sounds/${file}`);
+    const sfx = new Audio(`sounds/${file}`);
     sfx.volume = volume;
     sfx.play().catch(() => {});
   };
@@ -204,7 +204,7 @@ export const Board = ({
           >
             {cells.map((cell, idx) => {
               let cellImg = "img/caja-cerrada.jpeg";
-              let cellAlt = "Celda cerrada"; 
+              let cellAlt = "Celda cerrada";
               if (cell.isOpen) {
                 if (cell.hasMine) {
                   cellImg = "img/caja-mina.jpeg";
